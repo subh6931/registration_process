@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body
+        {
+            background-color: aqua;
+            color: navy;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <center>
-        <h1>registration form</h1>
+        <h1>REGISTRATION FORM</h1>
 
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" >
             {% csrf_token %}
 
-                {{ufo.as_p}}
-                {{pfo.as_p}}
+                {{uf.as_p}}
+                {{pf.as_p}}
             <input type="submit" value="register">
         </form>
     </center>
 </body>
-
-
-
-
 </html>
